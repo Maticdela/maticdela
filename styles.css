@@ -59,6 +59,14 @@ footer {
     color: white;
     padding: 10px;
     margin-top: auto; /* Premakne nogo na dno strani */
+    display: none; /* Initially hide the footer */
+    opacity: 0; /* Make it fully transparent */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+footer.visible {
+    display: block; /* Make it visible */
+    opacity: 1; /* Fade in */
 }
 
 /* Gumb za preklop teme */

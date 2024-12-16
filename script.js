@@ -83,6 +83,5 @@ window.addEventListener('scroll', checkFooterInView);
 // Call the function initially in case the footer is already in view
 checkFooterInView();
 
-
 // Dodaj event listener na obrazec
 contactForm.addEventListener('submit', validateForm);

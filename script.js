@@ -64,5 +64,25 @@ function validateForm(event) {
     }
 }
 
+// Get the footer element
+const footer = document.querySelector('footer');
+
+// Function to check if footer is in view
+function checkFooterInView() {
+    const rect = footer.getBoundingClientRect();
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        footer.classList.add('visible'); // Show the footer
+    } else {
+        footer.classList.remove('visible'); // Hide the footer
+    }
+}
+
+// Listen for the scroll event
+window.addEventListener('scroll', checkFooterInView);
+
+// Call the function initially in case the footer is already in view
+checkFooterInView();
+
+
 // Dodaj event listener na obrazec
 contactForm.addEventListener('submit', validateForm);

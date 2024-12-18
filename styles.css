@@ -255,3 +255,53 @@ footer {
         padding: 15px;
     }
 }
+/* Osnovni slog */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Temni način */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Gumb za premik na vrh */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTop:hover {
+    background-color: #0056b3;
+}
+
+/* Gumb za preklop teme */
+#toggleTheme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggleTheme:hover {
+    background-color: #218838;
+}
+

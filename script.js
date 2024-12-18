@@ -99,3 +99,17 @@ document.getElementById('toggleTheme').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 });
 
+
+// Funkcija za premik na vrh
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Preklop teme (temni način)
+document.getElementById('toggleTheme').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+

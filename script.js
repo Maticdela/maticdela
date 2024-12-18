@@ -85,3 +85,17 @@ checkFooterInView();
 
 // Dodaj event listener na obrazec
 contactForm.addEventListener('submit', validateForm);
+
+// Funkcija za premik na vrh
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Preklop teme (temni način)
+document.getElementById('toggleTheme').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
